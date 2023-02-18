@@ -1,9 +1,12 @@
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
 /**
- * main - Printf the last digit of a randonlmly fenerated
-number
+ * main - Prints the last digit of a randomly generated number
  * and whether it is greater than 5, less than 6, or 0.
  *
- * Return: Always 0.
+ * Return: Aleays 0
  */
 int main(void)
 {
@@ -15,12 +18,12 @@ int main(void)
 
 	if ((n % 10) > 5)
 	{
-		  printf("Last dogit of %d is %d and is greater thann s\n",
-			n, n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n",
+				n, n % 10);
 	}
-	else if ((n % 10) < 6 && (n % 10) !-10)
+	else if ((n % 10) < 6 && (n % 10) != 0)
 	{
-		printf("Last digit of %d is %d and less than 6 and not 0\n",
+		printf("Last digit of %d is %d and is less than 6 and not 0\n",
 				n, n % 10);
 	}
 	else
@@ -30,3 +33,4 @@ int main(void)
 	}
 
 	return (0);
+}
